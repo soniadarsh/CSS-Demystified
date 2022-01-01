@@ -1,0 +1,33 @@
+Anatomy of CSS
+==================
+
+1. Selector
+=============
+   When we select something in CSS like paragraph (p) it is called selector
+   selector can be ID, Class, Element
+
+P {
+    color: #fff;
+    font-size: 23px;
+}
+
+Here P is a selector.
+Here color, Font-size are property.
+Here #fff, 23px are property values.
+
+2. Declaration
+===============
+   Property + Value = Declaration
+   ex: color: #fff together will be Declaration.
+   
+
+3. CSS Rule
+==============
+   
+P {
+    color: #fff;
+    font-size: 23px;
+}
+
+This will be called css rule together.
+
