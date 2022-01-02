@@ -31,3 +31,4 @@ P {
 
 This will be called css rule together.
 
+4. The global scope of css is not a bug but it is a feature of css.
