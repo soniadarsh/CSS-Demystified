@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .block {
+        border: 10px solid limegreen;
+      }
+
+      .inline {
+        border: 10px solid pink;
+      }
+
+      .highlight {
+        border: 10px solid #ee3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Block Vs Inline Elements</h1>
+    <p>
+      HTML (Hypertext Markup Language) elements historically were categorized as
+      either "block-level" elements or "inline-level" elements. Since this is a
+      presentational characteristic it is nowadays specified by CSS in the Flow
+      Layout. A Block-level element occupies the entire horizontal space of its
+      parent element (container), and vertical space equal to the height of its
+      contents, thereby creating a "block". Browsers typically display the
+      block-level element with a newline both before and after the element. You
+      can visualize them as a stack of boxes. Note: A block-level element always
+      starts on a new line and takes up the full width available (stretches out
+      to the left and right as far as it can).
+    </p>
+
+    <h2>Usage</h2>
+    Block-level elements may appear only within a body element.
+
+    <h2>Block-level vs inline</h2>
+    There are a couple of key differences between block-level elements and
+    inline elements:
+
+    <h2>Content model</h2>
+    Generally, block-level elements may contain inline elements and (sometimes)
+    other block-level elements. Inherent in this structural distinction is the
+    idea that block elements create "larger" structures than inline elements.
+
+    <h2>Default formatting</h2>
+    By default,block-level elements begin on new lines, but inline elements can
+    start anywhere in a line. Inline elements are those which only occupy the
+    space bounded by the tags defining the element, instead of breaking the flow
+    of the content. Note: An inline element does not start on a new line and
+    only takes up as much width as necessary.
+
+    <h2>Conceptual differences</h2>
+    In brief, here are the basic conceptual differences between inline and
+    block-level elements: Content model Generally, inline elements may contain
+    only data and other inline elements. You can't put block elements inside
+    inline elements. Formatting By default, inline elements do not force a new
+    line to begin in the document flow. Block elements, on the other hand,
+    typically cause a line break to occur (although, as usual, this can be
+    changed using CSS).
+
+    <h2>Block-level Elements</h2>
+    The following is a complete list of all HTML "Block-level Elements" elements
+    (although "block-level" is not technically defined for elements that are new
+    in HTML5).
+    <br />
+    <br />
+
+    <div>1. <strong>"address"</strong>: Contact information.</div>
+    <div>2. <strong>"article"</strong>: Article content.</div>
+    <div>3. <strong>"dialog"</strong>: Dialogbox.</div>
+    <div>4. <strong>"dd"</strong>: Describes a term in a description list.</div>
+    <div>5. <strong>"div"</strong>: Document division.</div>
+    <div>6. <strong>"dl"</strong>: Description list.</div>
+    <div>7. <strong>"dt"</strong>: Description list term.</div>
+    <div>8. <strong>"fieldset"</strong>: Field set label.</div>
+    <div>9. <strong>"figcaption"</strong>: Figure caption.</div>
+    <div>
+      10. <strong>"figure"</strong>: Groups media content with acaption (see
+      "figcaption").
+    </div>
+    <div>11. <strong>"footer"</strong>: Section or page footer.</div>
+    <div>12. <strong>"form"</strong>: Inputform.</div>
+    <div>
+      13. <strong>"h1"</strong>, <strong>"h2"</strong>, <strong>"h3"</strong>,
+      <strong>"h4"</strong> <strong>"h5"</strong>, <strong>"h6"</strong>:
+      Heading levels 1-6. "header" Section or page header.
+    </div>
+    <div>14. <strong>"hgroup"</strong>: Groups header information.</div>
+    <div>15. <strong>"hr"</strong>: Horizontal rule (dividing line).</div>
+    <div>16. <strong>"li"</strong>: List item.</div>
+    <div>
+      17. <strong>"main"</strong>: Contains the central content unique to this
+      document.
+    </div>
+    <div>18. <strong>"nav"</strong>: Contains navigation links.</div>
+    <div>19. <strong>"ol"</strong>: Ordered list.</div>
+    <div>20. <strong>"p"</strong>: Paragraph.</div>
+    <div>21. <strong>"pre"</strong>: Preformatted text.</div>
+    <div>22. <strong>"section"</strong>: Section of a web page.</div>
+    <div>23. <strong>"table"</strong>: Table.</div>
+    <div>24. <strong>"ul"</strong>: Unordered lists.</div>
+
+    <h2>Inline Elements</h2>
+    The following elements are inline by default (although block and inline
+    elements are no longer defined in HTML 5, use content categories instead):
+    <br />
+    <br />
+    <div>1. "a"</div>
+    <div>2. "abbr"</div>
+    <div>3. "acronym"</div>
+    <div>4. "audio" (if it has visible controls)</div>
+    <div>5. "b"</div>
+    <div>6. "bdi"</div>
+    <div>7. "bdo"</div>
+    <div>8. "big"</div>
+    <div>9. "br"</div>
+    <div>10. "button"</div>
+    <div>11. "canvas"</div>
+    <div>12. "cite"</div>
+    <div>13. "code"</div>
+    <div>14. "data"</div>
+    <div>15. "datalist"</div>
+    <div>16. "del"</div>
+    <div>17. "dfn"</div>
+    <div>18. "em"</div>
+    <div>19. "embed"</div>
+    <div>20. "i"</div>
+    <div>21. "iframe"</div>
+    <div>22. "img"</div>
+    <div>23. "input"</div>
+    <div>24. "ins"</div>
+    <div>25. "kbd"</div>
+    <div>26. "label"</div>
+    <div>27. "map"</div>
+    <div>28. "mark"</div>
+    <div>29. "meter"</div>
+    <div>30. "noscript"</div>
+    <div>31. "object"</div>
+    <div>32. "output"</div>
+    <div>33. "picture"</div>
+    <div>34. "progress"</div>
+    <div>35. "q"</div>
+    <div>36. "ruby"</div>
+    <div>37. "s"</div>
+    <div>38. "samp"</div>
+    <div>39. "script"</div>
+    <div>40. "select"</div>
+    <div>41. "slot"</div>
+    <div>42. "small"</div>
+    <div>43. "span"</div>
+    <div>45. "strong"</div>
+    <div>46. "sub"</div>
+    <div>47. "sup"</div>
+    <div>48. "svg"</div>
+    <div>49. "template"</div>
+    <div>50. "textarea"</div>
+    <div>51. "time"</div>
+    <div>52. "u"</div>
+    <div>53. "tt"</div>
+    <div>54. "var"</div>
+    <div>55. "video"</div>
+    <div>56. "wbr"</div>
+
+    <h2>Block Level Examples</h2>
+    <h3>Ex:1</h3>
+    <p class="block">block-level element1 para1</p>
+    <p class="block">block-level element2 para2</p>
+    <span class="inline">This is span1</span
+    ><span class="inline">This is span2</span>
+    <br>
+    <h3>Ex:2</h3>
+    In this example, the "div" block-level element contains some text. Within
+    that text is a "span" element, which is an inline element. Because the
+    "span" element is inline, the paragraph correctly renders as a single,
+    unbroken text flow, like this:
+    <br>
+    <br>
+    <div>
+      The following span is an <span class="highlight">inline element</span>;
+      its background has been colored to display both the beginning and end of
+      the inline element's influence.
+    </div>
+
+    <h3>Ex:3</h3>
+    Now let's change that "span" into a block-level element, such as "p":
+    <br>
+    <br>
+    <div>The following paragraph is a <p class="highlight">block-level element;</p>
+        its border has been colored to display both the beginning and end of
+        the block-level element's influence.</div>
+  </body>
+</html>
