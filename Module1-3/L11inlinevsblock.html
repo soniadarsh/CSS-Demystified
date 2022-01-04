@@ -17,6 +17,12 @@
       .highlight {
         border: 10px solid #ee3;
       }
+
+      .inline_height {
+        border: 10px solid #ee3;
+        height: 140px;
+        width: 300px;
+      }
     </style>
   </head>
   <body>
@@ -60,7 +66,8 @@
     inline elements. Formatting By default, inline elements do not force a new
     line to begin in the document flow. Block elements, on the other hand,
     typically cause a line break to occur (although, as usual, this can be
-    changed using CSS).
+    changed using CSS). If you try to set the height or width property for
+    inline elements in CSS, the properties are ignored:
 
     <h2>Block-level Elements</h2>
     The following is a complete list of all HTML "Block-level Elements" elements
@@ -171,14 +178,14 @@
     <p class="block">block-level element2 para2</p>
     <span class="inline">This is span1</span
     ><span class="inline">This is span2</span>
-    <br>
+    <br />
     <h3>Ex:2</h3>
     In this example, the "div" block-level element contains some text. Within
     that text is a "span" element, which is an inline element. Because the
     "span" element is inline, the paragraph correctly renders as a single,
     unbroken text flow, like this:
-    <br>
-    <br>
+    <br />
+    <br />
     <div>
       The following span is an <span class="highlight">inline element</span>;
       its background has been colored to display both the beginning and end of
@@ -187,10 +194,23 @@
 
     <h3>Ex:3</h3>
     Now let's change that "span" into a block-level element, such as "p":
+    <br />
+    <br />
+    <div>
+      The following paragraph is a
+      <p class="highlight">block-level element;</p>
+      its border has been colored to display both the beginning and end of the
+      block-level element's influence.
+    </div>
     <br>
     <br>
-    <div>The following paragraph is a <p class="highlight">block-level element;</p>
-        its border has been colored to display both the beginning and end of
-        the block-level element's influence.</div>
+
+    <h3>The height or width property for
+      inline elements in CSS, the properties are ignored:</h3>
+    <div>
+      The following span is an <span class="inline_height">inline element</span>;
+      its background has been colored to display both the beginning and end of
+      the inline element's influence.
+    </div>
   </body>
 </html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .content2 {
+        border: 40px solid red;
+        padding: 10px;
+        margin-top: 10em;
+        background: white;
+        box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+      }
+
+      .content1 {
+        padding: 10px;
+        margin-top: 10em;
+        background: white;
+        box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+      }
+
+      :root {
+        --clr-primary: #ee6352;
+        --clr-body: #333;
+        --clr-bg: #ddd;
+      }
+
+      body {
+        font-family: basic-sans, sans-serif;
+        min-height: 100vh;
+        font-size: 1.125em;
+        line-height: 1.6;
+        color: var(--clr-body);
+        background: var(--clr-bg);
+      }
+
+      .title {
+        margin: 0 0 0.5em;
+        font-weight: 900;
+        color: var(--clr-primary);
+        line-height: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content1">
+      <h1 class="title">Title goes here</h1>
+      <p>
+        Lorem ipsum dolor, <a href="#">sit amet consectetur</a> adipisicing
+        elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet.
+        Itaque veritatis qui labore quia odio nihil, magni soluta facilis
+        necessitatibus cumque repellendus optio laborum.
+      </p>
+    </div>
+
+    <div class="content2">
+      <h1 class="title">Title goes here</h1>
+      <p>
+        Lorem ipsum dolor, <a href="#">sit amet consectetur</a> adipisicing
+        elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet.
+        Itaque veritatis qui labore quia odio nihil, magni soluta facilis
+        necessitatibus cumque repellendus optio laborum.
+      </p>
+    </div>
+
+    <p>If i don't set width to block level element and if i add only padding to it as shown in 1st box, it will not cause overflow that is very useful, if also add border to it as shown in 2nd box, it's not adding border to it existing size, it's adding that border and recalculating the size what i have for my content box automatically this is because i have not set width to the element.</p>
+  </body>
+</html>
