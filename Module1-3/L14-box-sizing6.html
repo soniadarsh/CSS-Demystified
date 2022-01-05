@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .example {
+            border: 5px solid limegreen;
+            width: 700px;
+        }
+
+      .content {
+        box-sizing: border-box;
+        width: 50%;
+        border: 40px solid red;
+        padding: 10px;
+        margin-top: 10em;
+        background: white;
+        box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+      }
+
+      :root {
+        --clr-primary: #ee6352;
+        --clr-body: #333;
+        --clr-bg: #ddd;
+      }
+
+      body {
+        font-family: basic-sans, sans-serif;
+        min-height: 100vh;
+        font-size: 1.125em;
+        line-height: 1.6;
+        color: var(--clr-body);
+        background: var(--clr-bg);
+      }
+
+      .title {
+        margin: 0 0 0.5em;
+        font-weight: 900;
+        color: var(--clr-primary);
+        line-height: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="example">
+      <div class="content">
+        <h1 class="title">Title goes here</h1>
+        <p>
+          Lorem ipsum dolor, <a href="#">sit amet consectetur</a> adipisicing
+          elit. Aliquid sapiente perferendis nulla sed consequuntur eveniet.
+          Itaque veritatis qui labore quia odio nihil, magni soluta facilis
+          necessitatibus cumque repellendus optio laborum.
+        </p>
+      </div>
+    </div>
+
+    <p>
+      width 50% of 700px of parent div(example div) with box sizing border box.
+    </p>
+  </body>
+</html>
