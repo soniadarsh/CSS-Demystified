@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rule1</h1>
+    Any thing related to typography will be tends to inherited by children.
+    like font-size, font-family, text-decoration, color, text transform
+    that why it's a common place to put lot of typographic rules on html or body.
+
+    Note: Everything we see on the page is child of the html element, so they inherit those propeties, we can 
+          override where we need to.
+
+    Note: if there is browser default on certain property that won't be inherited, this could be anything that doesn't have
+    default styling on it, e.g. Heading by default is bold and has font size so if u put font-size of 1.125 rem 
+    on html my h1 will grow as well because it is relative unit is on there so it's not inheriting on the font
+    size. e.g.2 Links they don't inherit the color because they have default color and text decoration on them.
+
+    <h1>Rule 2</h1>
+    Nothing related to Layout is inherited.
+    e.g. Margin, Padding, Height, width, position ... etc is not inherited.
+
+    <h1>Rule 3</h1>
+    The following DO NOT inherit things like you would expect them to, this is because of browser default.
+    e.g. button, input, textarea, select, optgroup or anything inside the form by default they don't 
+    inherit anything, but we can make them inherit those properties if we would like.
+
+    e.g 
+    button, input, optgroup, select, textarea {
+        font-family: inherit;
+    }
+
+    by this we can make them to inherit the FF u set as a default.
+
+    sometimes u want the link color to be same as body text color
+
+    a{
+        color: inherit;
+    }
+
+    we want Only H1 bold but h2, h3, h4 as regular text then
+
+    h2, h3, h4{
+        font-weight: inherit;
+    }
+
+</body>
+</html>
+
